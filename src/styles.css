@@ -1,0 +1,121 @@
+/* General container background and font */
+.container {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+/* FileUpload styles */
+.file-upload-form input[type="text"],
+.file-upload-form textarea,
+.file-upload-form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload-form input[type="text"]:focus,
+.file-upload-form textarea:focus,
+.file-upload-form input[type="file"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.file-upload-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.file-upload-form button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.file-upload-form button:hover:not(:disabled) {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+
+.file-upload-form button:disabled {
+  background-color: #a0b9d6;
+  cursor: not-allowed;
+}
+
+/* Message styling */
+.message {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* DisplayData container */
+.display-data-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styled table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.styled-table thead tr {
+  background-color: #4a90e2;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f6f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #d0e4ff;
+}
+
+/* Image styling */
+.styled-table img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
